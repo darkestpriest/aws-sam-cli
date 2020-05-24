@@ -1,6 +1,13 @@
 # aws-sam-cli
 Repository for [docker aws sam cli image](https://hub.docker.com/repository/docker/darkestpriest/aws-sam-cli)
 
+---
+This container image can be used to run `sam local start-api` from a docker container, it can be used within a [Test container](https://www.testcontainers.org/)
+
+The built lambda function it is required to be copied to inner container to invoke `sam local start-api`.
+
+It is recommended to use `sam local start-api --host 0.0.0.0` to be able to make requests to inner lambda container from a Mac host.
+
 ## How to build
 ```
 docker build --tag aws-sam-cli:0.2 .
