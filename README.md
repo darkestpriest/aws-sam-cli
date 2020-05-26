@@ -26,3 +26,8 @@ docker run -it --privileged --publish 3000:3000 --network host -v /var/run/docke
 docker tag aws-sam-cli:0.2 darkestpriest/aws-sam-cli:0.2
 docker push darkestpriest/aws-sam-cli:0.2
 ```
+
+# Run with Docker compose
+```
+docker-compose run --name sam-cli sam-cli
+```

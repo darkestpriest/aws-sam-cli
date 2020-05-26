@@ -1,0 +1,10 @@
+sam-cli:
+  image: aws-sam-cli:0.2
+  stop_signal: SIGKILL
+  stdin_open: true
+  tty: true
+  ports: 
+    - 3000:3000
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  command: bash
