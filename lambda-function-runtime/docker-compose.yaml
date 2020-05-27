@@ -1,0 +1,13 @@
+version: "2.0"
+services: 
+
+  sam-cli:
+    image: lambda-function-runtime:0.1
+    stop_signal: SIGKILL
+    stdin_open: true
+    tty: true
+    ports: 
+      - 3000:3000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: sam local start-api --host 0.0.0.0
