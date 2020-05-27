@@ -27,7 +27,7 @@ docker tag aws-sam-cli:0.2 darkestpriest/aws-sam-cli:0.2
 docker push darkestpriest/aws-sam-cli:0.2
 ```
 
-# Run with Docker compose
+## Run with Docker compose
 ```
 docker-compose run --name sam-cli sam-cli
 ```
