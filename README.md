@@ -29,7 +29,9 @@ docker push darkestpriest/aws-sam-cli:0.2
 ---
 
 ## lambda-function-runtime
-It is thinked to be used as local image to mount all the files built by `sam build` command together with `docker-compose`
+It is thinked to be used as local image to mount all the files built by `sam build` command together with `docker-compose`.
+
+`docker-composer up` can build and run `lambda-function-runtime` container that can start a lambda function exposed via `sam local start-api --host 0.0.0.0`.
 
 ## Build local image for lambda-function-runtime
 ```
