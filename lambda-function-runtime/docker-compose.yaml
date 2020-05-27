@@ -2,7 +2,7 @@ version: "2.0"
 services: 
 
   sam-cli:
-    image: lambda-function-runtime:0.1
+    build: .
     stop_signal: SIGKILL
     stdin_open: true
     tty: true
