@@ -26,8 +26,17 @@ docker run -it --privileged --publish 3000:3000 --network host -v /var/run/docke
 docker tag aws-sam-cli:0.2 darkestpriest/aws-sam-cli:0.2
 docker push darkestpriest/aws-sam-cli:0.2
 ```
+---
+
+## lambda-function-runtime
+It is thinked to be used as local image to mount all the files built by `sam build` command together with `docker-compose`
+
+## Build local image for lambda-function-runtime
+```
+docker build --tag lambda-function-runtime:0.1 .
+```
 
 ## Run with Docker compose
 ```
-docker-compose run --name sam-cli sam-cli
+docker-compose up
 ```
