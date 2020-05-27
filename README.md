@@ -2,7 +2,7 @@
 Repository for [docker aws sam cli image](https://hub.docker.com/repository/docker/darkestpriest/aws-sam-cli)
 
 ---
-This container image can be used to run `sam local start-api` from a docker container, it can be used within a [Test container](https://www.testcontainers.org/)
+This container image can be used to run `sam local start-api` from a docker container, it can be used within a [Docker compose JUnit rule](https://github.com/palantir/docker-compose-rule)
 
 The built lambda function it is required to be copied to inner container to invoke `sam local start-api`.
 
